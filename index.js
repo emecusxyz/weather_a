@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const path = require("path");
 const getweatherinfo = require("./getweather");
@@ -21,8 +22,8 @@ app.engine(
 app.set("view engine", "hbs");
 let year = new Date().getFullYear();
 fakeApi = () => "Faker";
-const API_KEY = "89898d279d982ed0edc030d1ac6a7158-063062da-b6a08e6f";
-const DOMAIN = "sandbox31b4f3bc21a34b7b9b43a0f06f54df28.mailgun.org";
+const API_KEY = process.env.MAILGUN_API_KEY;
+const DOMAIN = process.env.MAILGUN_DOMAIN;
 
 //import formData from 'form-data';
 //import Mailgun from 'mailgun.js';
