@@ -7,7 +7,7 @@ const formData = require("form-data");
 const app = express();
 
 app.use(express.static(path.join(__dirname, "public")));
-app.set("views", path.join(__dirname, "views"));
+app.set("views", path.join(__dirname, "Views"));
 
 // Configure template Engine and Main Template File
 app.engine(
