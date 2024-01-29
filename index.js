@@ -46,7 +46,7 @@ const client = mailgun.client({ username: "api", key: API_KEY });
 //     console.error(err);
 //   });
 
-// routes
+// route
 
 app.get("/", (req, res) => {
   res.render("home", { msg: "Thanks", year });
