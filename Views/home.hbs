@@ -1,0 +1,21 @@
+{{> header}}
+<div class="container">
+  <h1>Hello World from Handlebars</h1>
+  <form action="/getweather" > 
+    <input type="text" name="city" placeholder="Enter city name"/>
+    Would you like to receive the email?<input type="checkbox" name="cl" checked/><br>
+    <input type="email" name="email" placeholder="Enter email"/><br>
+    <button type="submit">submit</button>
+  </form>
+  
+
+  <h2>Weather : {{sum}}</h2>
+ <p>
+  {{#if msg}}
+    {{msg}}
+  {{else}}
+    No message was found
+  {{/if}}
+</p>
+</div>
+{{> footer year=year}}
