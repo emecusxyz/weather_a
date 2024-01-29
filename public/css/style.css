@@ -1,0 +1,31 @@
+body {
+  background-color: plum;
+}
+
+.shiny {
+  width: 25%;
+  padding: 12px 12px;
+  margin: 8px 0;
+  text-decoration-color: blue;
+  align-self: center;
+  margin-left: 35%;
+  background-color: aquamarine;
+  border-radius: 12px;
+  font-size: medium;
+  font-weight: bold;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px;
+}
+input[type="text"]:focus {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px;
+  background-color: blueviolet;
+}
